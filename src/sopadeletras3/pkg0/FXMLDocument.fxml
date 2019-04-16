@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sopadeletras3.pkg0.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="Pagina1" layoutY="-1.0" prefHeight="602.0" prefWidth="636.0">
+         <children>
+            <ImageView fx:id="ImagenPrincipal" fitHeight="593.0" fitWidth="635.0" layoutX="1.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@Imagenes/ImagenPrincipal.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Listo" layoutX="249.0" layoutY="481.0" mnemonicParsing="false" onAction="#Listo" prefHeight="31.0" prefWidth="139.0" text="LISTO" />
+            <TextField fx:id="IngresarPalabra" layoutX="181.0" layoutY="245.0" prefHeight="31.0" prefWidth="183.0" promptText="INGRESE LA PALABRA" />
+            <Button fx:id="BotonIngresar" layoutX="376.0" layoutY="245.0" mnemonicParsing="false" onAction="#Ingresar" prefHeight="31.0" prefWidth="139.0" text="INGRESAR" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pagina2" prefHeight="599.0" prefWidth="635.0" visible="false">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="635.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@Imagenes/imagen3.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="TextArea" layoutX="469.0" layoutY="178.0" prefHeight="423.0" prefWidth="168.0" />
+            <TextArea layoutX="1.0" layoutY="178.0" prefHeight="423.0" prefWidth="468.0" />
+            <StackPane fx:id="StackPane" layoutX="2.0" layoutY="179.0" prefHeight="423.0" prefWidth="468.0" />
+            <Button layoutX="469.0" layoutY="155.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" text="PALABRAS" textFill="#0f0f0f" />
+            <Button layoutX="14.0" layoutY="142.0" mnemonicParsing="false" onAction="#LlenarMatrizRandom" prefHeight="25.0" prefWidth="183.0" text="TERMINAR DE LLENAR MATRIZ" textFill="#0f0f0f" />
+            <Button layoutX="221.0" layoutY="143.0" mnemonicParsing="false" onAction="#LanzarHilos" prefHeight="25.0" prefWidth="113.0" text="LANZAR HILOS" textFill="#0f0f0f" />
+            <Button layoutX="355.0" layoutY="142.0" mnemonicParsing="false" onAction="#VerSolucion" prefHeight="25.0" prefWidth="107.0" text="VER SOLUCION" textFill="#0f0f0f" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
